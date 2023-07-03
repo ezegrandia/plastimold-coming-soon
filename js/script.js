@@ -148,6 +148,42 @@ function countdown() {
 setInterval(countdown, 1000);
 
 //--------------------------
+// Background Aleatorio
+//--------------------------
+
+// Crea los arrays de imágenes para cada fondo
+const imagenesFondo1 = [
+    "../assets/img/haas.jpg",
+    "../assets/img/tupper.jpg",
+    "../assets/img/exportacion.jpg",
+    "../assets/img/sampi.jpg",
+];
+
+const imagenesFondo2 = [
+    "../assets/img/pulseras.jpg",
+    "../assets/img/giul.jpg",
+    "../assets/img/separador.jpg",
+    "../assets/img/conos.jpg",
+];
+
+// Genera un número aleatorio para elegir el fondo
+const fondoAleatorio = Math.floor(Math.random() * 2) + 1; // Genera un número aleatorio entre 1 y 2
+
+// Configura el fondo aleatorio
+const cajas = document.querySelectorAll(".box");
+if (fondoAleatorio === 1) {
+    // Configura el fondo 1
+    for (let i = 0; i < cajas.length; i++) {
+        cajas[i].style.backgroundImage = `url(${imagenesFondo1[i]})`;
+    }
+} else {
+    // Configura el fondo 2
+    for (let i = 0; i < cajas.length; i++) {
+        cajas[i].style.backgroundImage = `url(${imagenesFondo2[i]})`;
+    }
+}
+
+//--------------------------
 // Llamadas onload Page
 //--------------------------
 
