@@ -61,25 +61,9 @@ h1 {
 
 .box {
     flex: 1 1 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.box-1 {
-    background-image: url("../assets/img/haas.jpg");
-}
-
-.box-2 {
-    background-image: url("../assets/img/tupper.jpg");
-}
-
-.box-3 {
-    background-image: url("../assets/img/exportacion.jpg");
-}
-
-.box-4 {
-    background-image: url("../assets/img/sampi.jpg");
+    object-position: center;
+    object-fit: cover;
+    width: 25%;
 }
 
 .filtro {
