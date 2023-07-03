@@ -152,6 +152,23 @@ setInterval(countdown, 1000);
 //--------------------------
 
 function randomBackground() {
+    // Precargar imágenes
+    const imagenes = [
+        "./assets/img/haas.jpg",
+        "./assets/img/tupper.jpg",
+        "./assets/img/exportacion.jpg",
+        "./assets/img/sampi.jpg",
+        "./assets/img/pulseras.jpg",
+        "./assets/img/giul.jpg",
+        "./assets/img/separador.jpg",
+        "./assets/img/conos.jpg",
+    ];
+
+    imagenes.forEach((imagen) => {
+        const img = new Image();
+        img.src = imagen;
+    });
+
     // Crea los arrays de imágenes para cada fondo
     const imagenesFondo1 = [
         "./assets/img/haas.jpg",
